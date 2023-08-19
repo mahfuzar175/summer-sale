@@ -41,7 +41,7 @@
                     <div class="text-2xl font-semibold mb-6">Kitchenware</div>
                     <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- kitchen card-1 -->
-                        <div class="card bg-base-100 shadow-xl w-[300px] p-2">
+                        <div class="card bg-base-100 shadow-xl w-[300px] p-2" onclick="hanlhleclick(this)">
                             <figure>
                               <img src="images/prod1.png" alt="Shoes" class="rounded-xl py-4 px-20 bg-slate-100" />
                             </figure>
@@ -58,7 +58,7 @@
                             </div>
                         </div>
                         <!-- kitchen card-2 -->
-                        <div class="card bg-base-100 shadow-xl w-[300px] p-2">
+                        <div class="card bg-base-100 shadow-xl w-[300px] p-2" onclick="hanlhleclick(this)">
                             <figure>
                               <img src="images/prod2.png" alt="Shoes" class="rounded-xl py-6 px-20 bg-slate-100" />
                             </figure>
@@ -75,7 +75,7 @@
                             </div>
                         </div>
                         <!-- kitchen card-3 -->
-                        <div class="card bg-base-100 shadow-xl w-[300px] p-2">
+                        <div class="card bg-base-100 shadow-xl w-[300px] p-2" onclick="hanlhleclick(this)">
                             <figure>
                               <img src="images/prod3.png" alt="Shoes" class="rounded-xl py-6 px-20 bg-slate-100" />
                             </figure>
@@ -87,7 +87,7 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
-                              <h1 class="font-medium">K. Accessories</h1>
+                              <h1 class="font-medium">Home Cooker</h1>
                               <p class="text-gray-600">45.00 TK</p>
                             </div>
                         </div>
@@ -99,7 +99,7 @@
                     <div class="text-2xl font-semibold mb-6">Kitchenware</div>
                     <div class="flex-1 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Sportswear card-1 -->
-                        <div class="card bg-base-100 shadow-xl w-[300px] p-2">
+                        <div class="card bg-base-100 shadow-xl w-[300px] p-2" onclick="hanlhleclick(this)">
                             <figure>
                               <img src="images/prod4.png" alt="Shoes" class="rounded-xl py-10 px-20 bg-slate-100" />
                             </figure>
@@ -116,7 +116,7 @@
                             </div>
                         </div>
                         <!-- Sportswear card-2 -->
-                        <div class="card bg-base-100 shadow-xl w-[300px] p-2">
+                        <div class="card bg-base-100 shadow-xl w-[300px] p-2" onclick="hanlhleclick(this)">
                             <figure>
                               <img src="images/prod5.png" alt="Shoes" class="rounded-xl py-4 px-20 bg-slate-100" />
                             </figure>
@@ -133,7 +133,7 @@
                             </div>
                         </div>
                         <!-- Sportswearcard-3 -->
-                        <div class="card bg-base-100 shadow-xl w-[300px] p-2">
+                        <div class="card bg-base-100 shadow-xl w-[300px] p-2" onclick="hanlhleclick(this)">
                             <figure>
                               <img src="images/prod6.png" alt="Shoes" class="rounded-xl py-6 px-20 bg-slate-100" />
                             </figure>
@@ -154,16 +154,23 @@
             </div>
             <!-- calculation -->
             <div class="ml-4 mt-14">
-                <h3 class="font-semibold mb-2">Have coupon?</h3>
+                <h3 class="font-semibold mb-4">Have coupon?</h3>
                 <div class="flex">
                     <input type="text" class="border rounded-l py-2 px-4" placeholder="Coupon code">
                     <button class="btn btn-secondary normal-case rounded-s py-2 px-4">Apply</button>
                 </div>
-                <div class="mt-4">
+                <div class="selected-items mt-4 list-decimal font-semibold" id="selected-items">
+
+                </div>
+                <div class="mt-5">
+                    <hr>
                     <h1 class="font-semibold">Total Price: <span class="text-gray-600">00</span> Tk</h1>
                     <h1 class="font-semibold">Discount: <span class="text-gray-600">00</span> Tk</h1>
                     <h1 class="font-semibold">Total: <span class="text-gray-600">00</span> Tk</h1>
-                    <button class="btn btn-secondary normal-case rounded p-2 mt-2 w-full" onclick="my_modal_1.showModal()">Make Purchase</button>
+                </div>
+                <hr>
+                <div>
+                    <button class="btn btn-secondary normal-case rounded p-2 mt-5 w-full" onclick="my_modal_1.showModal()">Make Purchase</button>
                     <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle text-center">
                         <form method="dialog" class="modal-box">
                             <img class="w-28 mx-auto" src="images/congo.png" alt="">
@@ -175,9 +182,9 @@
                         </form>
                     </dialog>
                 </div>
-                  
             </div>
         </div>
     </main>
+    <script src="js/summer.js"></script>
 </body>
 </html>
