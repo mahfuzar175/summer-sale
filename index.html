@@ -163,7 +163,17 @@
                     <h1 class="font-semibold">Total Price: <span class="text-gray-600">00</span> Tk</h1>
                     <h1 class="font-semibold">Discount: <span class="text-gray-600">00</span> Tk</h1>
                     <h1 class="font-semibold">Total: <span class="text-gray-600">00</span> Tk</h1>
-                    <button class="btn btn-secondary normal-case rounded p-2 mt-2 w-full">Make Purchase</button>
+                    <button class="btn btn-secondary normal-case rounded p-2 mt-2 w-full" onclick="my_modal_1.showModal()">Make Purchase</button>
+                    <dialog id="my_modal_1" class="modal modal-bottom sm:modal-middle text-center">
+                        <form method="dialog" class="modal-box">
+                            <img class="w-28 mx-auto" src="images/congo.png" alt="">
+                            <h3 class="pt-4 text-[#121212] text-4xl font-extrabold">Congratulations</h3>
+                            <p class="pt-4 text-gray-500">Your Purchase the product</p>
+                            <div class="modal-action justify-center">
+                                <button class="btn btn-secondary normal-case rounded p-4 mt-2">Go Home</button>
+                            </div>
+                        </form>
+                    </dialog>
                 </div>
                   
             </div>
