@@ -1,4 +1,5 @@
 let total = 0;
+let discountElementValue = 0;
 
 function hanlhleclick(target){
     // get product to cart
@@ -20,5 +21,34 @@ function hanlhleclick(target){
         btnMakePurchase.removeAttribute('disabled');
     }
 
+    const btnApply = document.getElementById('btn-apply');
+    if(total >= 200){
+        btnApply.removeAttribute('disabled');
+    }
 
 }
+
+
+document.getElementById('btn-apply').addEventListener('click', function(){
+    const applyInputField = document.getElementById('cupon-text');
+    const applyInputFieldText = applyInputField.value;
+
+    const discountElement = document.getElementById('discount-text');
+
+    const finalTotal = document.getElementById('final-total');
+    // discount calculation
+    if (applyInputFieldText === 'SELL200'){
+        const discountAmount = ((total * 20) / 100);
+
+        discountElementValue = discountAmount;
+        discountElement.innerText = discountAmount.toFixed(2);
+        
+        const discountedTotal = total - discountAmount;
+        finalTotal.innerText = discountedTotal.toFixed(2);
+    } 
+    else{
+        alert('Please input discount cupon');
+    }
+    
+})
+

@@ -214,17 +214,17 @@
             <div class="ml-4 mt-14">
                 <h3 class="font-semibold mb-4">Have coupon?</h3>
                 <div class="flex">
-                    <input type="text" class="border rounded-l py-2 px-4" placeholder="Coupon code">
-                    <button class="btn btn-secondary normal-case rounded-s py-2 px-4" disabled>Apply</button>
+                    <input id="cupon-text" type="text" class="border rounded-l py-2 px-4" placeholder="Coupon code">
+                    <button id="btn-apply" class="btn btn-secondary normal-case rounded-s py-2 px-4" disabled>Apply</button>
                 </div>
                 <div class="selected-items mt-4 list-decimal font-semibold" id="selected-items">
 
                 </div>
                 <div class="mt-5">
                     <hr>
-                    <h1 class="font-semibold">Total Price: <span id="total" class="text-gray-600">00</span> Tk</h1>
-                    <h1 class="font-semibold">Discount: <span class="text-gray-600">00</span> Tk</h1>
-                    <h1 class="font-semibold">Total: <span class="text-gray-600">00</span> Tk</h1>
+                    <h1 class="font-semibold">Total Price: <span id="total" class="text-gray-500">00</span> <span class="text-gray-500">Tk</span></h1>
+                    <h1 class="font-semibold">Discount: <span id="discount-text" class="text-gray-500">00</span> <span class="text-gray-500">Tk</span></h1>
+                    <h1 class="font-semibold">Total: <span id="final-total" class="text-gray-500">00</span> <span class="text-gray-500">Tk</span></h1>
                 </div>
                 <hr>
                 <div>
@@ -235,7 +235,7 @@
                             <h3 class="pt-4 text-[#121212] text-4xl font-extrabold">Congratulations</h3>
                             <p class="pt-4 text-gray-500">Your Purchase the product</p>
                             <div class="modal-action justify-center">
-                                <button class="btn btn-secondary normal-case rounded p-4 mt-2">Go Home</button>
+                                <button id="btn-go-home" class="btn btn-secondary normal-case rounded p-4 mt-2">Go Home</button>
                             </div>
                         </form>
                     </dialog>
