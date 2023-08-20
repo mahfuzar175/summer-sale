@@ -1,6 +1,7 @@
 let total = 0;
 let discountElementValue = 0;
 
+// Items container handle
 function hanlhleclick(target){
     // get product to cart
     const selectedItemContainer = document.getElementById('selected-items');
@@ -29,6 +30,7 @@ function hanlhleclick(target){
 }
 
 
+// apply button handle
 document.getElementById('btn-apply').addEventListener('click', function(){
     const applyInputField = document.getElementById('cupon-text');
     const applyInputFieldText = applyInputField.value;
@@ -51,4 +53,10 @@ document.getElementById('btn-apply').addEventListener('click', function(){
     }
     
 })
+
+
+// reload and reset the page
+document.getElementById('btn-go-home').addEventListener('click', function(){
+    location.reload();
+});
 
