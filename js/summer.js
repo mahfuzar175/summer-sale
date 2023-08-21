@@ -49,7 +49,7 @@ document.getElementById('btn-apply').addEventListener('click', function(){
         finalTotal.innerText = discountedTotal.toFixed(2);
     } 
     else{
-        alert('Please input discount cupon');
+        alert('Opps! Wrong Code: The cupon is not correct. Please verify and try again.');
     }
     
 })
